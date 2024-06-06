@@ -11,7 +11,7 @@
                                 <div class="numbers">
                                     <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Ruangan</p>
                                     <h5 class="font-weight-bolder">
-                                        2
+                                        {{$ruangan}}
                                     </h5>
                                     <p class="mb-0 " style="width: 250px">
                                         Total Ruangan yang dimiliki
@@ -35,7 +35,7 @@
                                 <div class="numbers">
                                     <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Pengguna</p>
                                     <h5 class="font-weight-bolder">
-                                        11
+                                        {{$pengguna}}
                                     </h5>
                                     <p class="mb-0" style="width: 250px">
 
@@ -60,7 +60,7 @@
                                 <div class="numbers">
                                     <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Jurusan</p>
                                     <h5 class="font-weight-bolder">
-                                        9
+                                        {{$jurusan}}
                                     </h5>
                                     <p class="mb-0" style="width: 250px">
 
@@ -85,7 +85,7 @@
                                 <div class="numbers">
                                     <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Peminjaman</p>
                                     <h5 class="font-weight-bolder">
-                                        23
+                                        {{$peminjaman}}
                                     </h5>
                                     <p class="mb-0" style="width: 250px">
                                         Total Peminjaman saat dari awal
