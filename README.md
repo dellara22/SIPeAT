@@ -24,8 +24,8 @@ Untuk menginstal dan menjalankan proyek ini secara lokal, ikuti langkah-langkah 
 
 1. Clone repositori:
    bash
-   git clone https://github.com/asans22/Sistem-Manajemen-klinik.git
-   cd sistem-manajemen-klinik
+   git clone https://github.com/dellara22/SIPeAT.git
+   cd SIPeAT
    
 
 2. Instal dependensi:
@@ -53,10 +53,10 @@ Untuk menginstal dan menjalankan proyek ini secara lokal, ikuti langkah-langkah 
    bash
    php artisan db:seed
    
-7. Import database dari file sistem_manajemen_klinik.sql (opsional):
+7. Import database dari sipeat.sql (opsional):
    bash
    -buka phpmyadmin
-   -import file sistem_manajemen_klinik.sql
+   -import file sipeat.sql
    
 
 8. Kompilasi aset:
@@ -84,14 +84,14 @@ Jika Anda ingin berkontribusi pada proyek ini, silakan ikuti langkah-langkah ber
 5. Buat Pull Request baru.
 
 ## Team members:
-1. Ahmad Syah Ramadhan 2208107010033
-2. Agil Mughni 2208107010025
+1. Shofia Nurul Huda 2208107010015
+2. Della Rahmatika 2208107010041
 
 
 ## Kontak
 
-Untuk pertanyaan atau saran, silakan hubungi saya di [ahmadsyahrmdn@gmail.com] atau rekan saya [agilmughni1@gmail.com].
+Untuk pertanyaan atau saran, silakan hubungi saya di [shofia_nh@mhs.usk.ac.id] atau rekan saya [dellarahmatika@gmail.com].
 
 ---
 
-README ini memberikan gambaran umum tentang Sistem Manajemen Klinik, instruksi instalasi, dan detail tentang cara menggunakan dan berkontribusi pada proyek ini. Jika Anda memiliki pertanyaan tambahan atau memerlukan bantuan lebih lanjut, jangan ragu untuk menghubungi saya.
+README ini memberikan gambaran umum tentang Sistem Peminjaman Aula dan Teater FMIPA USK, instruksi instalasi, dan detail tentang cara menggunakan dan berkontribusi pada proyek ini. Jika Anda memiliki pertanyaan tambahan atau memerlukan bantuan lebih lanjut, jangan ragu untuk menghubungi saya.
