@@ -7,6 +7,10 @@ use App\Http\Controllers\PenggunaController;
 use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RuanganController;
+use App\Models\jurusan;
+use App\Models\Peminjaman;
+use App\Models\Ruangan;
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
 use Spatie\Permission\Middleware\RoleMiddleware;
 
@@ -43,7 +47,11 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
 Route::middleware(['auth', 'verified', 'role:admin'])->group(function () {
     Route::get('/admin-dashboard', function () {
-        return view('admin.dashboard');
+        $ruangan = Ruangan::all()->count();
+        $pengguna = User::all()->count();
+        $jurusan = jurusan::all()->count();
+        $peminjaman = Peminjaman::all()->count();
+        return view('admin.dashboard', compact('ruangan', 'pengguna', 'jurusan', 'peminjaman'));
     })->name('admin.dashboard');
 
     Route::get('/data-jurusan', [JurusanController::class, 'index'])->name('admin.jurusan');
