@@ -15,7 +15,8 @@
 
             <div style="display: flex; justify-content:center; align-items:center;">
                 <button
-                    style="padding-left: 0.75rem;padding-right: 0.75rem; padding-top: 0.5rem; padding-bottom: 0.5rem; border:0; border-radius:7px">Login</button>
+                    style="padding-left: 0.75rem;padding-right: 0.75rem; padding-top: 0.5rem; padding-bottom: 0.5rem; border:0; border-radius:7px"><a
+                        href="/login">Login</a></button>
             </div>
         </div>
     </div>

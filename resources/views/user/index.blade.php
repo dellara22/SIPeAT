@@ -1,4 +1,4 @@
-@extends('layouts.guest')
+@extends('layouts.user')
 
 @section('content')
     <div class="h-screen w-full flex justify-center items-center">
@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="flex justify-center">
-                <button class="flex gap-2 bg-white rounded-md px-4 py-2 font-bold">
+                <a href="/calendar" class="flex gap-2 bg-white rounded-md px-4 py-2 font-bold">
                     <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                         width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path fill="currentColor"
@@ -22,7 +22,7 @@
                     </svg>
 
                     Pinjam
-                </button>
+                </a>
             </div>
         </div>
     </div>
