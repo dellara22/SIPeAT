@@ -90,7 +90,7 @@ Jika Anda ingin berkontribusi pada proyek ini, silakan ikuti langkah-langkah ber
 
 ## Kontak
 
-Untuk pertanyaan atau saran, silakan hubungi saya di [shofia_nh@mhs.usk.ac.id] atau rekan saya [dellarahmatika@gmail.com].
+Untuk pertanyaan atau saran, silakan hubungi saya di [shofia_nh@mhs.usk.ac.id] atau rekan saya [dellarahmatika2@gmail.com].
 
 ---
 
