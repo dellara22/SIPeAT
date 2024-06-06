@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Peminjaman;
 use App\Models\Ruangan;
+use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -80,11 +81,14 @@ class DashboardController extends Controller
 
     public function peminjaman()
     {
-        $disetujui = Peminjaman::where('status', '3')->get();
-        $ditolak = Peminjaman::where('status', '2')->get();
-        $dibatalkan = Peminjaman::where('status', '1')->get();
+        $userId = Auth::id();
+        $peminjaman = Peminjaman::where('addedby', $userId)->get();
+        $disetujui = Peminjaman::where('status', '3')->where('addedby', $userId)->get();
+        $ditolak = Peminjaman::where('status', '2')->where('addedby', $userId)->get();
+        $dibatalkan = Peminjaman::where('status', '1')->where('addedby', $userId)->get();
+        $user = Auth::user();
 
-        return view('user.peminjaman.peminjaman', compact('disetujui', 'ditolak', 'dibatalkan'));
+        return view('user.peminjaman.peminjaman', compact('disetujui', 'ditolak', 'dibatalkan', 'peminjaman', 'user'));
     }
 
     public function createPeminjaman(Request $request)
