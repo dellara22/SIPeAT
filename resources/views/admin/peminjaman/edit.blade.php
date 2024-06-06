@@ -69,7 +69,7 @@
                                         <button type="button" class="btn btn-warning"
                                             onclick="handleReset()">Reset</button>
                                         <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Close</button>
+                                            data-bs-dismiss="modal"><a href="{{route('admin.peminjaman')}}" class="text-white hover:text-white">Close</a></button>
                                     </div>
                                 </form>
                             </div>
